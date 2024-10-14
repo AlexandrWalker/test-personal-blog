@@ -1,0 +1,198 @@
+.post {
+    margin-bottom: 3rem;
+    padding: 2.5rem;
+    overflow: hidden;
+
+    background-color: $primary;
+    box-shadow: 0 15px 25px rgba($black, .35);
+    border-radius: 5px;
+
+    @include breakpoint($mobile-bp) {
+        padding: 1.5rem;
+    }
+}
+
+.post_header {
+    margin: 0 0 2.5rem;
+
+    &--preview {
+        margin: -2.5rem -2.5rem 2.5rem;
+    }
+}
+
+.post_preview {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.post_content {
+    margin-bottom: 2rem;
+}
+
+.post_title {
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+    line-height: 1.4;
+    color: $white;
+    font-weight: 500;
+
+    a {
+        color: inherit;
+    }
+
+    &--open {
+        margin-bottom: .75rem;
+    }
+}
+
+.post_subtitle {
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+
+    font-size: 1.6rem;
+    color: $white;
+    font-weight: 500;
+}
+
+.post_description {
+    font-size: 1.4rem;
+    color: #d2d2d2;
+}
+
+.post_text {
+    padding-bottom: 1rem;
+
+    font-size: 1.4rem;
+    color: $white;
+
+    border-bottom: 1px solid #1c1c1c;
+
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        margin-bottom: 2rem;
+        font-weight: 700;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    h3 {
+        font-size: 1.25em;
+    }
+
+    h4 {
+        font-size: 1.15em;
+    }
+
+    h5,
+    h6 {
+        font-size: 1em;
+    }
+
+    ul,
+    ol {
+        margin-bottom: 2rem;
+    }
+
+    ol {
+        list-style: decimal;
+        list-style-position: inside;
+    }
+
+    p {
+        margin-bottom: 2rem;
+
+    }
+
+    a {
+        color: $blue;
+    }
+
+    table {
+        margin-bottom: 2rem;
+        width: 100%;
+    }
+
+    img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+.post_footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include breakpoint($mobile-bp) {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+.post_data {
+    display: flex;
+
+    color: #828282;
+    line-height: 1.2;
+
+    a {
+        color: inherit;
+    }
+
+    @include breakpoint($mobile-bp) {
+        margin-bottom: 1rem;
+        font-size: 1.2rem;
+    }
+}
+
+.post_data_item {
+
+    &:not(:last-child):after {
+        content: "";
+        display: inline-block;
+        width: 6px;
+        height: 6px;
+        margin: 0 1.5rem;
+        position: relative;
+        top: -2px;
+
+        border-radius: 50%;
+        background-color: #C4C4C4;
+    }
+}
+
+.post_read {
+    font-size: 1.4rem;
+    color: #107EFF;
+}
+
+.post_actions {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+
+    font-size: 1.2rem;
+    color: $white;
+
+    a {
+        color: inherit;
+        opacity: 0.6;
+        transition: opacity .2s linear;
+
+        &:hover {
+            opacity: 1;
+        }
+    }
+
+}
+
+.post_actions_icon {
+    margin-left: .5rem;
+}

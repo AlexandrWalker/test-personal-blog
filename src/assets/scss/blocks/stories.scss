@@ -1,0 +1,83 @@
+.stories {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 13px;
+    grid-template-rows: 195px;
+    margin-bottom: 3rem;
+
+    @include breakpoint($mobile-bp) {
+        grid-template-columns: 140px 140px 140px 140px;
+        overflow: auto;
+    }
+}
+
+.stories_item {
+    overflow: hidden;
+    position: relative;
+
+    border-radius: 5px;
+    box-shadow: 0 5px 15px rgba($black, 0.2);
+    cursor: pointer;
+
+    &:after {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 100%;
+
+        background-image: linear-gradient(to bottom, rgba($black, .8),
+                rgba($black, 0) 50%,
+                rgba($black, .8));
+
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 2;
+    }
+
+    &:hover {
+        .stories_preview {
+            transform: scale(1.3);
+            transition-duration: 5s;
+        }
+    }
+}
+
+.stories_preview {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+
+    transform: scale(1.05);
+    transition: transform 1s ease-in-out;
+}
+
+.stories_title,
+.stories_date {
+    width: 100%;
+    padding: 1.4rem;
+
+    font-size: 1.2rem;
+    line-height: 1.3;
+    color: $white;
+
+    position: absolute;
+    left: 0;
+    z-index: 3;
+}
+
+.stories_title {
+    top: 0;
+}
+
+.stories_date {
+    bottom: 0;
+
+    text-align: right;
+}

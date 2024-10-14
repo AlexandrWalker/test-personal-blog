@@ -1,0 +1,133 @@
+---
+layout: default
+title: Post
+---
+
+<article class="post">
+  <div class="post_actions">
+    <a href="index.html">вернуться назад</a>
+    <a href="#">поделиться<img class="post_actions_icon" src="assets/images/share.svg" alt="" />
+    </a>
+  </div>
+
+  <div class="post_header post_header--open">
+    <h1 class="post_title post_title--open">Как создавать сайты легко</h1>
+    <ul class="post_data">
+      <li class="post_data_item">
+        <time datetime="2020-06-21 19:21">21.06.2020</time>
+      </li>
+      <li class="post_data_item">
+        <a href="#">создание сайтов</a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="post_content">
+    <div class="post_text">
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente quae
+        consequatur cum mollitia in nam esse eius fugit veniam sequi? Dolor eius
+        incidunt officiis fuga porro veniam ex iure voluptatem.
+      </p>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente quae
+        consequatur cum mollitia in nam esse eius fugit veniam sequi? Dolor eius
+        incidunt officiis fuga porro veniam ex iure voluptatem.
+      </p>
+      <p><img src="assets/images/image.jpg" alt="" /></p>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente quae
+        consequatur cum mollitia in nam esse eius fugit veniam sequi? Dolor eius
+        incidunt officiis fuga porro veniam ex iure voluptatem.
+      </p>
+    </div>
+    <!-- /.post_text -->
+
+    <div class="related">
+      <h3 class="post_subtitle">Интересно почитать</h3>
+      <ul class="related_list">
+        <li class="related_list-item">
+          <h4 class="relaited_list-title">
+            <a href="#">Как я сходил на FrontEnd Conf 2021</a>
+          </h4>
+          <time class="related_list-date" datetime="2020-06-21 19:21">21.06.2021</time>
+        </li>
+        <li class="related_list-item">
+          <h4 class="relaited_list-title">
+            <a href="#">Как писать код быстро и безболезненно</a>
+          </h4>
+          <time class="related_list-date" datetime="2020-06-21 19:21">21.06.2021</time>
+        </li>
+        <li class="related_list-item">
+          <h4 class="relaited_list-title">
+            <a href="#">Купил новый ноутбук за 150 000 руб</a>
+          </h4>
+          <time class="related_list-date" datetime="2020-06-21 19:21">21.06.2021</time>
+        </li>
+        <li class="related_list-item">
+          <h4 class="relaited_list-title">
+            <a href="#">Купил новый ноутбук за 150 000 руб</a>
+          </h4>
+          <time class="related_list-date" datetime="2020-06-21 19:21">21.06.2021</time>
+        </li>
+      </ul>
+    </div>
+    <!-- /.related -->
+
+    <h3 class="post_subtitle">Обсуждение</h3>
+
+    <form class="form" action="/" method="post">
+      <div class="form_group">
+        <textarea class="form_control form_control--textarea" name="comment-text" placeholder="Текст комментария"
+          data-autoresize></textarea>
+        <span class="form_line"></span>
+      </div>
+      <button class="btn btn--blue btn--rounded btn--sm" type="submit">
+        Отправить
+      </button>
+    </form>
+
+    <ul class="comments">
+      <li class="comments_item">
+        <div class="comments_header">
+          <img class="comments_avatar" src="assets/images/avatar.jpg" alt="" />
+
+          <div class="comments_author">
+            <div class="comments_name">Александр Сергеев</div>
+            <time class="comments_pubdate" datetime="2020-12-21 19:21">1 неделю назад</time>
+          </div>
+        </div>
+        <div class="comments_text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
+          maxime optio, facere laborum labore expedita! Nulla corporis nam quis
+          ut voluptatibus, vel reiciendis dolore! Amet, excepturi. Asperiores
+          ipsam quam quod?
+        </div>
+        <button class="comments_reply" type="button">ответить</button>
+
+        <ul class="comments">
+          <li class="comments_item">
+            <div class="comments_header">
+              <img class="comments_avatar" src="assets/images/avatar-1.jpg" alt="" />
+
+              <div class="comments_author">
+                <div class="comments_name">Джонни</div>
+                <time class="comments_pubdate" datetime="2020-12-21 19:21">1 неделю назад</time>
+              </div>
+            </div>
+            <div class="comments_text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
+              maxime optio, facere laborum labore expedita! Nulla corporis nam
+              quis ut voluptatibus, vel reiciendis dolore! Amet, excepturi.
+              Asperiores ipsam quam quod?
+            </div>
+            <button class="comments_reply" type="button">ответить</button>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+  <!-- /.comments -->
+  <!-- /.post_content -->
+</article>
+<!-- /.post -->

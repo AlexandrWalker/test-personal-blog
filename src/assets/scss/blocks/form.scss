@@ -1,0 +1,82 @@
+.form {
+    &--auth {
+        max-width: 28rem;
+        margin: 0 auto;
+    }
+}
+
+.form_group {
+    margin-bottom: 1.5rem;
+    position: relative;
+
+    &--md {
+        margin-bottom: 2.5rem;
+    }
+}
+
+.form_control {
+    display: block;
+    width: 100%;
+    padding: .5rem 0 .75rem;
+
+    background: none;
+    border: none;
+    border-bottom: 1px solid #3f3f3f;
+    border-radius: 0;
+    box-shadow: none;
+
+    font-family: inherit;
+    font-size: 1.45rem;
+    color: $white;
+
+    &::placeholder {
+        color: rgba($white, .2);
+    }
+
+    &:focus+.form_line {
+        width: 100%;
+    }
+
+    &--textarea {
+        height: 32px;
+        overflow: hidden;
+        resize: none;
+    }
+}
+
+.form_line {
+    width: 0;
+    height: 1px;
+
+    background-color: $blue;
+
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+
+    transition: width .2s linear;
+}
+
+.form_footer {
+
+    &--center {
+        text-align: center;
+    }
+}
+
+.form_footer-list {
+    display: flex;
+    justify-content: center;
+
+    font-size: 1.2rem;
+    line-height: 1.2;
+
+    li {
+        margin: 0 .5rem
+    }
+
+    a {
+        color: $white;
+    }
+}
